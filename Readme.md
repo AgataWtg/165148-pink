@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анна Васильева](https://up.htmlacademy.ru/adaptive/6/user/165148).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталия Короткова](https://htmlacademy.ru/profile/id63875).
 
 ---
 
