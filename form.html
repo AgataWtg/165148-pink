@@ -30,14 +30,14 @@
         1000 миль на вашу бонусную карту!</p>
     </div>
 
-    <form action="" method="">
+    <form class="form" action="" method="">
       <div class="form__data">
         <label for="name">Имя</label>
-        <input type="text" name="name" id="name" placeholder="Введите ваше имя">
+        <input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
         <label for="surname">Фамилия</label>
-        <input type="text" name="surname" id="surname" placeholder="Укажите фамилию">
+        <input type="text" name="surname" id="surname" placeholder="Укажите фамилию" required>
         <label for="second-name">Отчество</label>
-        <input type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
+        <input type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже" required>
       </div>
 
       <div class="form__data--grеy">
@@ -56,26 +56,12 @@
           <label for="hotel-field">Разгромил отель</label>
       </div>
 
-      <section class="popup">
-        <div class="popup__title">Что-то пошло не так!</div>
-        <div class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли
-          их заполнить</div>
-        <button class="popup__btn" type="button">Ok</button>
-      </section>
-
       <div class="form__data">
         <label for="tel">Номерок телефончика</label>
-        <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
+        <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста" required>
         <label for="email">Адресок почты</label>
-        <input type="email" name="email" id="email" placeholder="E-mail, пожалуйста">
+        <input type="email" name="email" id="email" placeholder="E-mail, пожалуйста" required>
       </div>
-
-      <section class="popup">
-        <div class="popup__title">Ваша заявка отправлена</div>
-        <div class="popup__description">Спасибо за участие, ваша заявка уже поступила к нам.
-          В ближайшее время мы рассмотрим ее и оповестим вас.</div>
-        <button class="popup__btn" type="button">Закрыть окно</button>
-      </section>
 
       <div class="form__data--grey">
         <h3 class="form__title">С каким приложением путешествовали?</h3>
@@ -89,12 +75,26 @@
 
       <div class="form__data">
         <label for="comment-field">Опишите свои эмоции</label>
-        <textarea name="comment" id="comment-field" rows="5">Можно прям в красках, не стесняясь
+        <textarea name="comment" id="comment-field" rows="5" required>Можно прям в красках, не стесняясь
           в выражениях</textarea>
         <button class="form__btn" type="submit">Отправить форму</button>
+        <div class="requiered-fields"><sub>*</sub>Обязательные поля</div>
       </div>
 
-      <div class="requiered-fields"><sub>*</sub>Обязательные поля</div>
+      <div class="popup">
+        <div class="popup__title">Ваша заявка отправлена</div>
+        <div class="popup__description">Спасибо за участие, ваша заявка уже поступила к нам.
+          В ближайшее время мы рассмотрим ее и оповестим вас.</div>
+        <button class="popup__btn" type="button">Закрыть окно</button>
+      </div>
+
+      <div class="popup">
+        <div class="popup__title">Что-то пошло не так!</div>
+        <div class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли
+          их заполнить</div>
+        <button class="popup__btn" type="button">Ok</button>
+      </div>
+
     </form>
   </main>
 
@@ -103,7 +103,7 @@
         <div class="page-footer__logo">
           <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Pink"></a>
         </div>
-        <div class="page-footer-social">
+        <div class="page-footer__social">
           <div class="social-links">
             <a class="social-link social-link--vk" href="#">Мы в Вконтакте</a>
             <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
