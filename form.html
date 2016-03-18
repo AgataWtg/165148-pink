@@ -7,32 +7,31 @@
   <body>
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink">
+        <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Pink"></a>
       </div>
       <nav class="main-nav">
-        <span class="main-nav__toggle main-nav__toggle--closed">Открыть меню</span>
-        <div class="main-nav__wrapper main-nav__wrapped--closed">
-          <ul class="main-nav__item main-nav__item--active">
-            <li class="main-nav__item main-nav__item--active"><span>Главная</span></li>
-            <li class="main-nav__item"><a href="#">Наши работы</a></li>
-            <li class="main-nav__item"><a href="#">Тарам-парам</a></li>
+        <button class="main-nav__toggle" type="button">Меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="#">Главная</a></li>
+            <li class="main-nav__item"><a href="#">Фотографии</a></li>
+            <li class="main-nav__item"><a href="#">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
           </ul>
-          <div class="main-nav__user-nav">
-            <a class="main-nav__user-login" href="" title="Войти">Вход</a>
-          </div>
         </div>
       </nav>
     </header>
 
+    <main>
 
-    <div class="form-intro">
-      <h2 class="form-intro__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-      <p class="form-intro__description">Поделитесь своей историей и получите шанс выиграть ценный приз -
+    <div class="intro">
+      <h2 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      <p class="intro__description">Поделитесь своей историей и получите шанс выиграть ценный приз -
         1000 миль на вашу бонусную карту!</p>
     </div>
 
-    <form action="https://echo.htmlacademy.ru" method="post">
-      <div class="personal">
+    <form action="" method="">
+      <div class="form__data">
         <label for="name">Имя</label>
         <input type="text" name="name" id="name" placeholder="Введите ваше имя">
         <label for="surname">Фамилия</label>
@@ -41,8 +40,8 @@
         <input type="text" name="second-name" id="second-name" placeholder="Ну и отчество тоже">
       </div>
 
-      <div class="achievements">
-        <div class="achievements__title">
+      <div class="form__data--grеy">
+        <div class="form__title">Ваши безбашенные достижения в путешествии</div>
           <input type="checkbox" name="selfy" id="selfy-field" checked>
           <label for="selfy-field">Сделал селфи с акулой</label>
           <input type="checkbox" name="beach" id="beach-field" checked>
@@ -56,17 +55,30 @@
           <input type="checkbox" name="hotel" id="hotel-field">
           <label for="hotel-field">Разгромил отель</label>
       </div>
-    </div>
 
-      <div class="form-contacts">
+      <section class="popup">
+        <div class="popup__title">Что-то пошло не так!</div>
+        <div class="popup__description">Проверьте поля, выделенные красным, скорее всего вы забыли
+          их заполнить</div>
+        <button class="popup__btn" type="button">Ok</button>
+      </section>
+
+      <div class="form__data">
         <label for="tel">Номерок телефончика</label>
         <input type="tel" name="tel" id="tel" placeholder="Номер, пожалуйста">
         <label for="email">Адресок почты</label>
         <input type="email" name="email" id="email" placeholder="E-mail, пожалуйста">
       </div>
 
-      <div class="form-apps">
-        <h3 class="form-apps__title">С каким приложением путешествовали?</h3>
+      <section class="popup">
+        <div class="popup__title">Ваша заявка отправлена</div>
+        <div class="popup__description">Спасибо за участие, ваша заявка уже поступила к нам.
+          В ближайшее время мы рассмотрим ее и оповестим вас.</div>
+        <button class="popup__btn" type="button">Закрыть окно</button>
+      </section>
+
+      <div class="form__data--grey">
+        <h3 class="form__title">С каким приложением путешествовали?</h3>
         <label>
           <input type="radio" name="question-apps" value="iOS">Pink для iOS></label>
         <label>
@@ -75,32 +87,33 @@
           <input type="radio" name="question-apps" value="Windows">Windows Phone</label>
       </div>
 
-      <div class="form-description">
+      <div class="form__data">
         <label for="comment-field">Опишите свои эмоции</label>
         <textarea name="comment" id="comment-field" rows="5">Можно прям в красках, не стесняясь
           в выражениях</textarea>
-        <button class="btn" type="submit">Отправить форму</button>
+        <button class="form__btn" type="submit">Отправить форму</button>
       </div>
 
       <div class="requiered-fields"><sub>*</sub>Обязательные поля</div>
     </form>
+  </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
           <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Pink"></a>
         </div>
-        <section class="page-footer-social">
+        <div class="page-footer-social">
           <div class="social-links">
             <a class="social-link social-link--vk" href="#">Мы в Вконтакте</a>
             <a class="social-link social-link--fb" href="#">Мы в Фейсбуке</a>
             <a class="social-link social-link--youtube" href="#">Мы в Ютьюбе</a>
           </div>
-        </section>
-        <section class="page-footer__copyright">
+        </div>
+        <div class="page-footer__copyright">
           Разработано:
           <a class="page-footer__copyright-link" href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="HTML Academy"></a>
-        </section>
+        </div>
       </div>
     </footer>
 

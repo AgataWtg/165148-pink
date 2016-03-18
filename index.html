@@ -8,13 +8,13 @@
     <header class="page-header">
       <div class="wrapper">
       <div class="page-header__logo">
-        <img src="http://placehold.it/150x100" width="150" height="100" alt="Pink">
+        <a href="#"><img src="http://placehold.it/150x100" width="150" height="100" alt="Pink"></a>
       </div>
       <nav class="main-nav">
-        <span class="main-nav__toggle main-nav__toggle--closed">Меню</span>
-        <div class="main-nav__wrapper main-nav__wrapped--closed">
-          <ul class="main-nav__item">
-            <li class="main-nav__item"><span>Главная</span></li>
+        <button class="main-nav__toggle" type="button">Меню</button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a>Главная</a></li>
             <li class="main-nav__item"><a href="#">Фотографии</a></li>
             <li class="main-nav__item"><a href="#">Конкурс</a></li>
             <li class="main-nav__item"><a href="#">HTML Academy</a></li>
@@ -24,20 +24,19 @@
     </div>
     </header>
 
-    <div class="main-intro">
-      <h2 class="main-intro__title">Взгляните на жизнь иначе!</h2>
-      <section class="main-intro-apps">
-        <a class="main-intro__btn">Скачать приложение</a>
-        <ul class="main-intro__apps-list">
+   <main>
+
+    <div class="intro">
+      <section class="intro-apps">
+        <a class="intro__btn">Скачать приложение</a>
+        <ul class="intro__apps-list">
           <li><img src="http://placehold.it/150x100" width="150" height="100" alt="Apple"></li>
           <li><img src="http://placehold.it/150x100" width="150" height="100" alt="Android"></li>
           <li><img src="http://placehold.it/150x100" width="150" height="100" alt="Windows"></li>
         </ul>
       </section>
-      <p class="main-intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      <div class="intro__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</div>
     </div>
-
-    <main class="main-content">
 
       <div class="promo">
         <div class="promo__title">Устали от серости мегаполиса?</div>
@@ -68,31 +67,33 @@
         <div class="reviews__wrapper">
           <div class="reviews__items">
 
-            <blockquote class="reviews__item reviews__item--active">
-              <b class="reviews__author-name">Николай Петров</b>
-              <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому
+            <div class="reviews__item reviews__item--active">
+              <div class="reviews__author-name">Николай Петров</div>
+              <blockquote class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в
-                комментариях к выложенной фотографии!</p>
-            </blockquote>
+                комментариях к выложенной фотографии!</blockquote>
+              </div>
 
-            <blockquote class="reviews__item reviews__item--active">
-              <b class="reviews__author-name">Николай Петров</b>
-              <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому
+            <div class="reviews__item">
+              <div class="reviews__author-name">Николай Петров</div>
+              <blockquote class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в
-                комментариях к выложенной фотографии!</p>
-            </blockquote>
+                комментариях к выложенной фотографии!</blockquote>
+              </div>
 
-            <blockquote class="reviews__item reviews__item--active">
-              <b class="reviews__author-name">Николай Петров</b>
-              <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому
-                взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в
-                комментариях к выложенной фотографии!</p>
-            </blockquote>
+            <div class="reviews__item">
+               <div class="reviews__author-name">Николай Петров</div>
+               <blockquote class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому
+                 взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в
+                 комментариях к выложенной фотографии!</blockquote>
+            </div>
 
             <div class="slider__pagination">
-              <i class="active"></i>
-              <i></i>
-              <i></i>
+              <ol>
+              <li><a href="#"><img src="http://placehold.it/10x10"></a></li>
+              <li><a href="#"><img src="http://placehold.it/10x10"></a></li>
+              <li><a href="#"><img src="http://placehold.it/10x10"></a></li>
+             </ol>
           </div>
         </div>
       </div>
@@ -164,18 +165,20 @@
         </ul>
 
         <div class="slider__pagination">
-          <i class="active"></i>
-          <i></i>
-          <i></i>
+          <ol>
+            <li><a href="#"><img src="http://placehold.it/10x10"></a></li>
+            <li><a href="#"><img src="http://placehold.it/10x10"></a></li>
+            <li><a href="#"><img src="http://placehold.it/10x10"></a></li>
+         </ol>
         </div>
       </div>
 
     </main>
 
 
-    <footer class="main-footer">
+    <footer class="page-footer">
       <div class="page-footer__contacts">
-        <h2 class="page-caption">Остались вопросы? Свяжитесь с нами!</h2>
+        <div class="page-footer__caption">Остались вопросы? Свяжитесь с нами!</div>
         <dl>
           <dt>Звоните:</dt>
           <dd>+7 (812) 555-66-66</dd>
